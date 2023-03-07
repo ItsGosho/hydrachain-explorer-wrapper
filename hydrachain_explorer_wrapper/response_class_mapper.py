@@ -13,6 +13,7 @@ class ResponseClassMapper:
     def __init__(self):
         pass
 
+
     def map_search_response(self, response: dict) -> Search:
         return Search(
             type=next((x for x in Type if x.value[0] == response['type']), None),

@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
-from hydrachain_explorer_wrapper.models.transaction_receipt import TransactionReceipt
-from hydrachain_explorer_wrapper.models.transaction_script_pub_key import TransactionScriptPubKey
+from hydrachain_explorer_wrapper.models.transaction.transaction_receipt import TransactionReceipt
+from hydrachain_explorer_wrapper.models.transaction.transaction_script_pub_key import TransactionScriptPubKey
 
 
 @dataclass

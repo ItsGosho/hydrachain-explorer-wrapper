@@ -2,15 +2,19 @@ from dataclasses import dataclass
 from datetime import datetime
 from typing import List
 
-from hydrachain_explorer_wrapper.models.transaction_contract_spend import TransactionContractSpend
-from hydrachain_explorer_wrapper.models.transaction_hrc_20_token_transfer import TransactionHRC20TokenTransfer
-from hydrachain_explorer_wrapper.models.transaction_input import TransactionInput
-from hydrachain_explorer_wrapper.models.transaction_output import TransactionOutput
+from hydrachain_explorer_wrapper.models.transaction.transaction_contract_spend import TransactionContractSpend
+from hydrachain_explorer_wrapper.models.transaction.transaction_hrc_20_token_transfer import TransactionHRC20TokenTransfer
+from hydrachain_explorer_wrapper.models.transaction.transaction_input import TransactionInput
+from hydrachain_explorer_wrapper.models.transaction.transaction_output import TransactionOutput
 
 
 @dataclass
-class RecentTransaction:
+class Transaction:
     id: str = None
+    hash: str = None
+    version: str = None
+    lock_time: int = None
+    block_hash: str = None
     inputs: List[TransactionInput] = None
     outputs: List[TransactionOutput] = None
     is_coinbase: bool = False

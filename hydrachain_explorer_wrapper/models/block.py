@@ -28,7 +28,7 @@ class Block:
     size: int = None
     timestamp: datetime = None
     transactions: List[str] = None
-    version: int = None
+    version: str = None
     weight: int = None
 
 

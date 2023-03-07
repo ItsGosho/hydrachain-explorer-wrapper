@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from typing import List
 
-from hydrachain_explorer_wrapper.models.contract_qrc20 import ContractQrc20
-from hydrachain_explorer_wrapper.models.contract_qrc20token import ContractQRC20Token
+from hydrachain_explorer_wrapper.models.contract.qrc20 import Qrc20
+from hydrachain_explorer_wrapper.models.qrc20.qrc_20_token import QRC20Token
 
 
 @dataclass
@@ -11,10 +11,14 @@ class Contract:
     address_hex: str = None
     vm: str = None
     type: str = None
-    qrc20: ContractQrc20 = None
+    qrc20: Qrc20 = None
     balance: int = None
     total_received: int = None
     total_sent: int = None
     unconfirmed: int = None
-    qrc_20_balances: List[ContractQRC20Token] = None
+    qrc_20_balances: List[QRC20Token] = None
     transaction_count: int = None
+
+    def __post_init__(self):
+        if self.qrc_20_balances is None:
+            self.qrc_20_balances = []

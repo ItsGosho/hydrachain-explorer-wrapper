@@ -2,11 +2,11 @@ from datetime import datetime
 from typing import Callable
 from decimal import Decimal
 
-from hydrachain_explorer_wrapper.models.biggest_miner import BiggestMiner
-from hydrachain_explorer_wrapper.models.block_interval import BlockInterval
-from hydrachain_explorer_wrapper.models.daily_transaction import DailyTransaction
-from hydrachain_explorer_wrapper.models.rich_list import RichList
-from hydrachain_explorer_wrapper.models.search import Search, Type
+from hydrachain_explorer_wrapper.models.misc.biggest_miner import BiggestMiner
+from hydrachain_explorer_wrapper.models.stats.block_interval import BlockInterval
+from hydrachain_explorer_wrapper.models.stats.daily_transaction import DailyTransaction
+from hydrachain_explorer_wrapper.models.misc.rich_list import RichList
+from hydrachain_explorer_wrapper.models.other.search import Search, Type
 
 class ResponseClassMapper:
 

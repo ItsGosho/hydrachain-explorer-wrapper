@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import List
 
-from hydrachain_explorer_wrapper.models.transaction_receipt_log import TransactionReceiptLog
+from hydrachain_explorer_wrapper.models.transaction.transaction_receipt_log import TransactionReceiptLog
 
 
 @dataclass

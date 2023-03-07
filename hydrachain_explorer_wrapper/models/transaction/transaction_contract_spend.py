@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from typing import List
 
-from hydrachain_explorer_wrapper.models.transaction_input import TransactionInput
-from hydrachain_explorer_wrapper.models.transaction_output import TransactionOutput
+from hydrachain_explorer_wrapper.models.transaction.transaction_input import TransactionInput
+from hydrachain_explorer_wrapper.models.transaction.transaction_output import TransactionOutput
 
 
 @dataclass

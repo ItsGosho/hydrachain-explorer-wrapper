@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import List
 
-from hydrachain_explorer_wrapper.models.transaction_script_sig import TransactionScriptSig
+from hydrachain_explorer_wrapper.models.transaction.transaction_script_sig import TransactionScriptSig
 
 
 @dataclass
